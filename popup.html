@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--button section-->
+    <div class="container">
+        <div class="contentBox">
+            <h1>Cypress Changelog</h1>
+            <div class="controls">
+                <button id="fetchBtn"><i class="fas fa-sync-alt"></i><br>Update</button>
+                <button id="themeSwitcher"><i class="fas fa-sun"></i><br>DARK</button>
+            </div>
+        </div>
+    </div>
+    <!--cypress version section-->
+    <div class="container">
+        <div id="versionContent" class="contentBox">
+            <span>Current Cypress Version:</span>
+            <a id="linkText" href="https://github.com/cypress-io/cypress/releases/" target="_blank">
+                <div id="cypressVersion" class="version"></div>
+            </a>
+            <br>
+            <a id="linkText" href="https://docs.cypress.io/guides/references/changelog" target="_blank">mehr
+                Details</a>
+
+        </div>
+        <div id="changelogContent" class="contentBox"></div>
+    </div>
+    <!--author content-->
+    <div class="container">
+        <div class="contentBox">
+            <h2 class="anchor">Created with &hearts;</h2>
+            Christoph Kempe 
+            <div id="extensionVersion"></div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
